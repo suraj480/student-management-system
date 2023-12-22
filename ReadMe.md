@@ -9,3 +9,6 @@ This project is made with help of spring-booot , Mysql and Thymeleaf
 4. Add service inside StudentService packages 
 5. Inside impl packacges implement StudentService just hover over it and add unimplemented method
 6. in controller Handler method to handle list students and return model and view
+
+Note:- Springboot will automatically find all Thymeleaf files inside template folder hence keep all thymeleaf file inside template folder
+
