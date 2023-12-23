@@ -12,3 +12,4 @@ This project is made with help of spring-booot , Mysql and Thymeleaf
 
 Note:- Springboot will automatically find all Thymeleaf files inside template folder hence keep all thymeleaf file inside template folder
 
+7. add this on top of main method else autotmatic table creation wont happen @EntityScan("com.management.entity")
