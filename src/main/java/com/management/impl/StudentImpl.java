@@ -25,4 +25,9 @@ private StudentRepository stundentrepository;
 		return studentList;
 	}
 
+	@Override
+	public Student saveStudent(Student student) {
+		return stundentrepository.save(student);
+	}
+
 }
