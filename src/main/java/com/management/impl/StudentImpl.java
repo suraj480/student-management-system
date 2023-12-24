@@ -42,4 +42,9 @@ private StudentRepository stundentrepository;
 		return stundentrepository.save(student);
 	}
 
+	@Override
+	public void deleteStudentById(Long id) {
+		 stundentrepository.deleteById(id);
+	}
+
 }
