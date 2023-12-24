@@ -19,7 +19,10 @@ private StudentRepository stundentrepository;
 
 	@Override
 	public List<Student> getAllStudents() {
-		return stundentrepository.findAll();
+		List<Student> studentList = stundentrepository.findAll();
+		  System.out.println("Number of students fetched from database: " + studentList.size()); 
+		System.out.println("studentList"+studentList);
+		return studentList;
 	}
 
 }

@@ -13,3 +13,5 @@ This project is made with help of spring-booot , Mysql and Thymeleaf
 Note:- Springboot will automatically find all Thymeleaf files inside template folder hence keep all thymeleaf file inside template folder
 
 7. add this on top of main method else autotmatic table creation wont happen @EntityScan("com.management.entity")
+
+8. Add this on top of main method (else you will face db connection issue as it is for enabeling all packages) @ComponentScan(basePackages = {"springbootthymeleafwebapp.controller","springbootthymeleafwebapp.model","springbootthymeleafwebapp.repository","springbootthymeleafwebapp.service"}) @EnableJpaRepositories(basePackages = {"springbootthymeleafwebapp.controller","springbootthymeleafwebapp.model","springbootthymeleafwebapp.repository","springbootthymeleafwebapp.service"})
