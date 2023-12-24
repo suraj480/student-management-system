@@ -30,4 +30,16 @@ private StudentRepository stundentrepository;
 		return stundentrepository.save(student);
 	}
 
+	@Override
+	public Student getStudentById(Long id) {
+		
+		return stundentrepository.findById(id).get();
+	}
+
+	@Override
+	public Student updateStudent(Student student) {
+		
+		return stundentrepository.save(student);
+	}
+
 }
